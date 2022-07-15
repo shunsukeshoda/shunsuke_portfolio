@@ -1,0 +1,14 @@
+.line-container {
+    height: 100vh;
+
+}
+.line {
+    margin-top: 350px;
+    width: 0;
+    height: 2px;
+    background-color: #3A62B2;
+}
+.title1, .title2{
+    color: #3A62B2;
+    font-size: 45px;
+}

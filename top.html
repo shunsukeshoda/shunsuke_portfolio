@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>portfolio</title>
 </head>
 <body>
-    
+    <!-- アニメーション -->
+    <div class="line-container">
+        <div class="line"></div>
+    </div>
+    <!-- アニメーションend -->
+
+        <div class="title1">
+            <p>Shunsuke Shoda</p>
+        </div>
+        <div class="title2">
+            <p>portfolio site</p>
+        </div>
+
+    <script>
+        $(function() {
+            let winW = $(window).width();
+            $('.line').animate({
+                width: winW
+            }, 1200);
+        });
+
+        $(function(){
+            $(".title1",".title2").css("display", "none");
+            setTimeout(function() {
+                $('.line-container').fadeOut();
+                }, 2000);
+        });
+
+        $(function(){
+            $(".title1").css({opacity:'0'});
+            setTimeout(function(){
+                $(".title1").css("display", "block");
+                $(".title1").stop().animate({opacity:'1'},1000);
+                },3000);
+        });
+
+        $(function(){
+            $(".title2").css({opacity:'0'});
+            setTimeout(function(){
+                $(".title2").css("display", "block");
+                $(".title2").stop().animate({opacity:'1'},1000);
+                },4000);
+        });
+    </script>
 </body>
 </html>
