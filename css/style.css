@@ -1,14 +1,85 @@
 .line-container {
-    height: 100vh;
-
+    /* height: 100vh; */
 }
 .line {
     margin-top: 350px;
     width: 0;
     height: 2px;
-    background-color: #3A62B2;
+    background-color: #2171c0;
 }
-.title1, .title2{
-    color: #3A62B2;
-    font-size: 45px;
+
+.title {
+    color: #2171c0;
+    /* font-family: 'Ibarra Real Nova', serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    padding-top: 130px;
+}
+.title1 {
+    font-size: 80px;
+}
+.title2 {
+    padding-top: 15px;
+    font-size: 50px;
+}
+.subtitle{
+    font-size: 35px;
+    color: #231F20;
+    font-family: 'Prompt', sans-serif;
+    border-bottom: 2px solid #231F20;
+}
+
+.body-top {
+    height: 420px;
+    text-align: center;
+}
+
+.about {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.profile {
+    width: 45%;
+}
+.profile-item {
+    padding-top: 15px;
+}
+.profile p {
+    color: #231F20;
+    padding-bottom: 13px;
+    font-size: 18px;
+}
+
+.skill {
+    width: 45%;
+}
+.skill-item {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.skill-icon {
+    width: 20%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.skill-icon span {
+    font-size: 50px;
+    color: #2171c0;
+}
+.skill-icon p {
+    padding-top: 8px;
+    color: #231F20;
+    font-size: 16px;
+}
+
+.product {
+    width: 77%;
+    margin: 0 auto;
+    padding-top: 100px;
 }
