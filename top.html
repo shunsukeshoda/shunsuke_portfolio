@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- google fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet"> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Ibarra+Real+Nova&family=Kdam+Thmor+Pro&family=Prompt&family=Roboto&display=swap" rel="stylesheet">
@@ -21,11 +17,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <title>portfolio</title>
 
-    <!-- <script>
+    <script>
         $(function() {
             $('html,body').animate({ scrollTop: 0 }, '1');
         });
-    </script>	 -->
+    </script>	
 </head>
 
 <body class="body">
@@ -41,63 +37,65 @@
         </div>
     </div>
 
-    <div class="about">
-        <div class="profile about-left">
-            <h2 class="subtitle">Profile</h2>
-            <div class="profile-item">
-                <p>Name &emsp;&emsp;荘田隼輔 -shunsuke shoda-</p>
-                <p>Age &emsp;&emsp;&emsp;29</p>
-                <p>Live &emsp;&emsp;&emsp;青森県八戸市</p>
-                <p>Hobby &emsp;&emsp;釣り、読書、ゲーム</p>
+    <div class="main">
+        <div class="about">
+            <div class="profile about-left">
+                <h2 class="subtitle">Profile</h2>
+                <div class="profile-item">
+                    <p>Name &emsp;&emsp;荘田隼輔 -shunsuke shoda-</p>
+                    <p>Age &emsp;&emsp;&emsp;29</p>
+                    <p>Live &emsp;&emsp;&emsp;青森県八戸市</p>
+                    <p>Hobby &emsp;&emsp;釣り、読書、ゲーム</p>
+                </div>
+            </div>
+        
+            <div class="skill about-right">
+                <h2 class="subtitle">Skill</h2>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <span class="devicon-html5-plain icon"></span>
+                        <p>html</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-css3-plain"></span>
+                        <p>css</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-sass-original"></span>
+                        <p>sass</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-javascript-plain"></span>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-jquery-plain"></span>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-php-plain"></span>
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-laravel-plain"></span>
+                        <p>Laravel</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-wordpress-plain"></span>
+                        <p>Wordpress</p>
+                    </div>
+                    <div class="skill-icon">
+                        <span class="devicon-mysql-plain"></span>
+                        <p>MySQL</p>
+                    </div>
+                    
+                </div>     
             </div>
         </div>
-    
-        <div class="skill about-right">
-            <h2 class="subtitle">Skill</h2>
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <span class="devicon-html5-plain icon"></span>
-                    <p>html</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-css3-plain"></span>
-                    <p>css</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-sass-original"></span>
-                    <p>sass</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-javascript-plain"></span>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-jquery-plain"></span>
-                    <p>jQuery</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-php-plain"></span>
-                    <p>PHP</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-laravel-plain"></span>
-                    <p>Laravel</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-wordpress-plain"></span>
-                    <p>Wordpress</p>
-                </div>
-                <div class="skill-icon">
-                    <span class="devicon-mysql-plain"></span>
-                    <p>MySQL</p>
-                </div>
-                
-            </div>     
-        </div>
-    </div>
 
-    <div class="product">
-        <h2 class="subtitle">Product</h2>
+        <div class="product">
+            <h2 class="subtitle">Product</h2>
+        </div>
     </div>
 
     <script>
@@ -109,7 +107,7 @@
         });
 
         $(function(){
-            $(".title","profile",".main").css("display", "none");
+            $(".title",".main").css("display", "none");
             setTimeout(function() {
                 $('.line-container').fadeOut();
             }, 2000);
@@ -117,7 +115,6 @@
 
         $(function(){
             $(".title").css({opacity:'0'});
-            $(".profile").css({opacity:'0'});
             $(".main").css({opacity:'0'});
             setTimeout(function(){
                 $(".title").css("display", "block");
@@ -126,7 +123,7 @@
             setTimeout(function(){
                 // $(".title2").css("display", "block");
                 $(".title").stop().animate({opacity:'1'},1000);
-                $(".profile").stop().animate({opacity:'1'},1000);
+                // $(".about").stop().animate({opacity:'1'},1000);
             },4000);
             setTimeout(function(){
                 $(".main").css("display", "block");
